@@ -1,0 +1,139 @@
+html, body {
+     background: transparent !important;
+     color: transparent !important;
+     background-color: transparent !important;
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     -webkit-backface-visibility: visible;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	
+}
+
+#video{
+	position: fixed;
+	top:0;
+	left:0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+  
+
+}
+
+/*.centered {
+  font-family: 'Raleway';
+  font-size: 35px;
+  color:white;
+  border-radius: 5%;
+  position: fixed;
+  bottom:30%;
+  left: 28%;
+  z-index: 4;
+  text-align: center;
+  display: inline;
+
+  
+ 
+}*/
+
+.monsterText {
+	font-family: 'Raleway';
+  font-size: 75px;
+	color: white;
+	position: fixed;
+  top:30%;
+  left:25%;
+  z-index: 4;
+
+
+  
+  
+  }
+
+.monsterText > p {
+	margin: 0;
+}
+.monsterText > span > p{
+  color:rgb(242,154,192);
+}
+
+button[type="button"]{
+	position: fixed;
+  top:50%;
+  left:28%;
+  width: 20%;
+  height: 10%;
+	border-radius: 5px;
+  font-size: 35px;
+  background-color:rgba(242,154,192,.7);
+  z-index: 4;
+  text-align: center
+
+}
+button[type="button2"]{
+  position: fixed;
+  top:50%;
+  right:28%;
+  width: 20%;
+  height: 10%;
+  border-radius: 5px;
+  font-size: 35px;
+  background-color:rgba(242,154,192,.7);
+  z-index: 4;
+  text-align: center
+
+}
+
+@media only screen and (min-width: 767px) {
+		.centered {
+    		width:40%;
+    	}
+  
+  }
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+
+    .centered {
+    	bottom:3%;
+    	left:1%;
+    }
+
+    .monsterText{
+    	
+    	right:10%;
+    	top:10%;
+      height:25%;
+    }
+    
+
+
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+    .centered {
+      bottom:3%;
+      
+    }
+
+    .monsterText{
+      
+      font-size:50px; 
+      top:15%;
+      height:25%;
+    }
+}    
+
+
+
+
+
+
+
