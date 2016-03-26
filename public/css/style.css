@@ -58,7 +58,7 @@ html, body {
 .monsterText > p {
 	margin: 0;
 }
-.monsterText > span > p{
+.monsterText > p > span  {
   color:rgb(242,154,192);
 }
 
@@ -66,51 +66,66 @@ button[type="button"]{
 	position: fixed;
   top:50%;
   left:28%;
-  width: 20%;
-  height: 10%;
-	border-radius: 5px;
+  width: 18%;
+  height: 15%;
   font-size: 35px;
   background-color:rgba(242,154,192,.7);
   z-index: 4;
-  text-align: center
+  text-align: center;
+  border-radius:5px;
 
 }
 button[type="button2"]{
   position: fixed;
   top:50%;
   right:28%;
-  width: 20%;
-  height: 10%;
-  border-radius: 5px;
+  width: 18%;
+  height: 15%;
   font-size: 35px;
   background-color:rgba(242,154,192,.7);
   z-index: 4;
-  text-align: center
+  text-align: center;
+  border-radius:5px;
 
 }
-
-@media only screen and (min-width: 767px) {
-		.centered {
-    		width:40%;
-    	}
-  
-  }
-
 @media only screen and (max-width: 767px) {
     /* phones */
 
-    .centered {
-    	bottom:3%;
-    	left:1%;
-    }
+   
 
     .monsterText{
     	
-    	right:10%;
+    	right:25%;
     	top:10%;
-      height:25%;
+      font-size: 30px;
+      text-align: center;
+
     }
+
+    button[type="button"]{
+    position: fixed;
     
+    width: 20%;
+    height: 10%;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color:rgba(242,154,192,.7);
+    z-index: 4;
+    text-align: center;
+
+  }
+    button[type="button2"]{
+    position: fixed;  
+    bottom: 5%;  
+    width: 20%;
+    height: 10%;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color:rgba(242,154,192,.7);
+    z-index: 4;
+    text-align: center;
+
+  }
 
 
 }
@@ -118,10 +133,7 @@ button[type="button2"]{
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
 
-    .centered {
-      bottom:3%;
-      
-    }
+  
 
     .monsterText{
       
