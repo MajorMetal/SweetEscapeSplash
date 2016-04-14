@@ -11,7 +11,7 @@ body {
   left: 0;
   font-family: 'Raleway';
   color: transparent !important;
-  background-color: transparent !important;
+  background-color: black !important;
   -webkit-backface-visibility: visible;
 }
 
@@ -35,6 +35,14 @@ body {
 
 .text span {
   color: rgb(242,154,192);
+}
+.text2 {
+  position: relative;
+  margin: 5%;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  z-index: 4;
 }
 
 .row {
@@ -83,7 +91,7 @@ body {
 
   .column{
     float: left;
-    width: 50%;
+    width: 100%;
   }
 
    
