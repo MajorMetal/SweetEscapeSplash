@@ -1,62 +1,111 @@
 @font-face {
   font-family: 'Raleway';
+  font-family: myFirstFont;
+  src: url(../assets/PLUMP.TTF);
 }
 
 html,
 body {
+  font-family: 'Raleway';
+  -webkit-backface-visibility: visible;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url(../assets/images/sweetBG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.title {
+  position: relative;
+  font-family: myFirstfont;
+  font-size: 65px;
+  color: #ff99cc;
+  min-height: 10vh;
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  
+}
+
+.supTitle {
+  position: relative;
+  font-family: myFirstfont;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  
+}
+
+.video {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgba(255,153,204,0.4);
+  border-radius: 5px;
+  padding-bottom: 25.25%;
+  overflow: hidden;
+}
+
+.embed {
+  position: relative;
+  height: 0;
+  border-radius: 5px;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.embed iframe {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  font-family: 'Raleway';
-  color: transparent !important;
-  background-color: black !important;
-  -webkit-backface-visibility: visible;
-}
-
-.video{
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 2;
+  height: 100%;
+  width: 100%;
+  border: 0;
 }
 
 .text {
   position: relative;
   margin: 0;
-  font-size: 75px;
-	color: white;
+  font-size: 23px;
   text-align: center;
-  z-index: 4;
+
+ 
+
 }
 
 .text span {
   color: rgb(242,154,192);
 }
-.text2 {
-  position: relative;
-  margin: 5%;
-  font-size: 50px;
-  color: white;
-  text-align: center;
-  z-index: 4;
-}
+
+
 
 .row {
-  position: absolute;
-  bottom: 25px;
+  position: relative;
   width: 100%;
+  margin-top: 25px;
 }
 
 .column {
   position: relative;
   width: 100%;
-  margin: 20px 0;
+  margin: 10px 0;
   text-align: center;
-  z-index: 4;
 }
 
 .column:before,
@@ -69,40 +118,38 @@ body {
   clear: both;
 }
 
-.button{
-  display:inline-block;
-  min-width: 200px;
-  margin: 0 20px;
+.button {
+  display: inline-block;
+  min-width: 125px;
+  margin: 10px 20px 0;
   border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 35px;
+  padding: 15px 30px;
+  font-size: 20px;
   font-family: 'Raleway';
   color: #fff;
   background-color: #ff99cc;
-  line-height: 50px;
   text-align: center;
   text-decoration: none;
-  outline: 0;
+  border-style: solid 1px black;
+ 
 }
+
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (min-width : 550px) {
 /* Styles */
 
-  .column{
-    float: left;
+  /*.column{
+    float: right;
+    width: 26%;
+    right: 1%;
+  }*/
+}
+
+@media only screen and (min-width: 992px) {
+  .column {
+    float: right;
     width: 50%;
+    margin-right: 5%;
   }
-  .column2{
-    float: left;
-    width: 200%;
-  }
-   
-
-
-
-
-
-
-
-
+}
