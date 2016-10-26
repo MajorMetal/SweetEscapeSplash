@@ -178,7 +178,12 @@ video#bgvid {
     -moz-box-shadow: inset 0px 0px 0px 200px rgba(0,0,0,0.1);
     box-shadow: inset 0px 0px 0px 200px rgba(0,0,0,0.1);
 }
-
+.hero .logo{
+    width: 50%;
+    position: absolute;
+    right: -50px;
+    top: -30px; 
+}
 .hero .buy-button {
     color: #222;
     background-color: #F7F428;
