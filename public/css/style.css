@@ -87,15 +87,22 @@ video#bgvid {
 }
 .main{
   position: relative;
-  background-color: rgba();
 }
 .header {
-    background:url(../assets/images/checkerboard_pattern.png) center center repeat; 
-    overflow: hidden;
-    opacity: .4;
-    padding: 0px 15px 0px;
-    z-index: 10;
-    
+  padding: 0px 15px 0px;
+  min-height: 136px;
+}
+.header::after {
+  content: "";
+  background:url(../assets/images/checkerboard_pattern.png) center center repeat; 
+  overflow: hidden;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
 }
 
 .header .title {
