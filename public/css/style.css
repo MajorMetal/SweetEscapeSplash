@@ -41,18 +41,6 @@ h1 {
     text-transform: uppercase;
 }
 
-h2 {
-    font-family: "theboldfont", "Arial Black", Gadget, sans-serif;
-    letter-spacing: 1px;
-}
-
-
-section {
-    overflow: hidden;
-    position: relative;
-}
-
-
 .inner {
     margin: 0 auto;
     width: 1000px;
@@ -85,45 +73,35 @@ video#bgvid {
     overflow: hidden;
 
 }
-.main{
-  position: relative;
-  background-color: rgba();
-}
+
 .header {
-    background:url(../assets/images/checkerboard_pattern.png) center center repeat; 
+    background:url(../assets/images/checkerboard_pattern.png) repeat; 
     overflow: hidden;
-    opacity: .4;
     padding: 0px 15px 0px;
-    z-index: 10;
+    z-index: -10;
+    opacity: .4;
     
 }
 
 .header .title {
     max-width: 100%;
-    max-height: 100%;
+    width: 300px;
     line-height: 0;
-    margin: 0;
     float: left;
+    z-index: 1;
 }
-.header .title img{
 
-  max-height: 90%;
-  max-width: 90%;
-  opacity: 1;
 
-}
+
 .header .developer {
     float: right;
-    /*width: 190px;*/
+    width: 300px;
     max-width: 100%;
-    max-height: 100%;
+    opacity: 0.75;
     line-height: 0;
 }
-.header .developer img{
 
-  max-height: 60%;
-  max-width: 60%;
-}
+
 .header .developer:hover {
     opacity: 1;
 }
@@ -247,18 +225,20 @@ video#bgvid {
 /*Smartphones (portrait) ----------- */
 @media only screen and (min-width : 350px) { 
 
- .hero .inner h1 {
+  .hero .inner h1 {
 
     height: 0;
     visibility: hidden;
   }
-   
+   .footer #vive{
+    height: 0%;
+    width: 0%;
+    visibility: hidden;
 
-  /* .hero {
-    padding: 25px 0px;
-   }
-*/
   }
+
+
+}
 
  
 @media only screen and (min-width: 992px) {
