@@ -1,6 +1,6 @@
-use Rack::Static, 
 
-root: "public", urls: ["/images", "/js", "/css"]
+use Rack::Static, root: "assets", urls: ["/js", "/css", "/images", "/pdfs", "/videos"]
+
 
 header_options = {
   "Content-Type" => "text/html",
@@ -8,9 +8,11 @@ header_options = {
 }
 
 map "/" do
-  run ->(env) { [200, header_options, File.open('/public/index.html', File::RDONLY)] }
+
+  run ->(env) { [200, header_options, File.open("views/index.html", File::RDONLY)] }
 end
 
 map "/support" do
-  run ->(env) { [200, header_options, File.open('/public/support/support.html', File::RDONLY)] }
+  run ->(env) { [200, header_options, File.open("views/support.html", File::RDONLY)] }
 end
+
