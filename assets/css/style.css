@@ -1,11 +1,11 @@
 @font-face {
   font-family: myFirstFont;
-  src: url(../assets/fonts/BEBAS___.TTF);
+  src: url(/fonts/BEBAS___.TTF);
 }
 
 @font-face {
   font-family: myNextFont;
-  src: url(../assets/fonts/HTOWERT.TTF);
+  src: url(/fonts/HTOWERT.TTF);
 }
 
 html,

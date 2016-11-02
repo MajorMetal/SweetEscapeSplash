@@ -1,5 +1,5 @@
 
-use Rack::Static, root: "assets", urls: ["/js", "/css", "/images", "/pdfs", "/videos"]
+use Rack::Static, root: "assets", urls: ["/js", "/css", "/images", "/pdfs", "/videos" , "/fonts" ]
 
 
 header_options = {
