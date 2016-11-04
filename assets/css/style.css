@@ -36,7 +36,7 @@ section {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 60px;
   text-align: justify;
   text-transform: uppercase;
 }
@@ -90,7 +90,7 @@ video#bgvid {
 /* Hero */
 .hero {
   color: #fff;
-  padding: 50px 20px 50px;
+  padding: 150px 20px 50px;
   text-align: justify;
 }
 
@@ -136,10 +136,10 @@ video#bgvid {
 }
 
 .hero .logo{
-  width: 50%;
+  width: 60%;
   position: absolute;
-  right: -100px;
-  top: -50px;
+  right: -200px;
+  top: -70px;
 }
 .hero .buy-button {
   color: #222;
@@ -236,6 +236,23 @@ video#bgvid {
 #SupportUS:hover{
   background-color: #AACF88;
 }
+
+@media only screen and (max-width: 1366px) {
+  h1 {
+  font-size: 50px;
+}
+
+  .hero  {
+    padding: 50px 20px 100px;
+  }
+
+  .hero .logo {
+    top: 0;
+    width: 50%;
+    right:-70px;
+  }
+}
+
 
 @media only screen and (max-width: 960px) {
   .hero .inner {
@@ -359,12 +376,15 @@ video#bgvid {
   }
 }
 
+@media only screen and (max-width: 320px) {
 
+.monster {
+    padding-right: 115px;
+    
+    
+  }
 
-
-
-
-
+}
 
 
 
