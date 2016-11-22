@@ -126,6 +126,8 @@ video#bgvid {
   -webkit-clip-path: polygon(3px 3px, 100% 0, 99% 100%, 0 100%);
   clip-path: polygon(3px 3px, 100% 0, 99% 100%, 0 100%);
   text-decoration: none;
+  top:10;
+  left:10;
   /*width:35%;*/
 }
 
@@ -136,11 +138,16 @@ video#bgvid {
 }
 
 .hero .logo{
-  width: 60%;
+  display:none;
+  
+}
+.hero .logo2{
+  max-width:60%;
   position: absolute;
   right: -200px;
-  top: -70px;
+  top: -15px;
 }
+
 .hero .buy-button {
   color: #222;
   background-color: #F7F428;
@@ -246,10 +253,10 @@ video#bgvid {
     padding: 50px 20px 100px;
   }
 
-  .hero .logo {
+  .hero .logo2 {
     top: 0;
     width: 50%;
-    right:-70px;
+    right:-100px;
   }
 }
 
@@ -259,7 +266,7 @@ video#bgvid {
     margin-bottom: 50px;
   }
 
-  .hero .logo {
+  .hero .logo2 {
     top: -50px;
   }
 }
@@ -287,12 +294,11 @@ video#bgvid {
     visibility: hidden;
   }
 
-  .hero .logo {
+  .hero .logo2 {
     position: static;
     top: 0;
     right: 0;
     width: 100%;
-    display: block;
     clear: both;
   }
 
@@ -341,6 +347,8 @@ video#bgvid {
     font-size: 24px;
   }
 
+ 
+
   #pressKit {
     height: 0;
     width: 0;
@@ -375,15 +383,38 @@ video#bgvid {
     display: none;
   }
 }
-
+@media only screen and (max-width: 414px) {
+   .hero .logo2{
+  display: block
+  top:0;
+  max-width:100%;
+  padding-bottom:50px;
+  padding-top: 50px;
+  }
+@media only screen and (max-width: 360px) {
+  .hero .logo2{
+  display: block
+  top:0;
+  max-width:100%;
+  padding-bottom:50px;
+  padding-top: 50px;
+  }
 @media only screen and (max-width: 320px) {
 
-.monster {
+  .monster {
     padding-right: 115px;
-    
-    
+  }
+  .hero .logo2{
+  display: block
+  top:0;
+  max-width:100%;
+  padding-bottom:50px;
+  padding-top: 50px;
   }
 
+  
+
+  
 }
 
 
