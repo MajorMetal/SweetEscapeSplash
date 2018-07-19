@@ -157,7 +157,7 @@ video#bgvid {
 
 /*Footer*/
 .footer {
-  background: #0e0e0e;
+  background: black;
   padding: 20px 0;
   /*line-height: 30px;*/
   font-family: 'myNextFont', Arial, Helvetica, sans-serif;
@@ -204,7 +204,7 @@ video#bgvid {
 .footer h2{
   display: inline-block;
   color: white;
-  padding-bottom: -20px;
+  padding-bottom: -20px;er
 }
 
 
@@ -350,9 +350,7 @@ video#bgvid {
  
 
   #pressKit {
-    height: 0;
-    width: 0;
-    display: none;
+    display: inline-block;
   }
 
   .monster {
@@ -374,9 +372,7 @@ video#bgvid {
   }
 
   .footer .social {
-    display: block;
-    clear: both;
-    padding: 0;
+    display: none;
   }
 
   video#bgvid {
@@ -416,6 +412,3 @@ video#bgvid {
 
   
 }
-
-
-
