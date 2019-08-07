@@ -175,8 +175,13 @@ video#bgvid {
   margin: auto;
 }
 
-#pressKit{
+#pressKit h2{
   padding-left: -100px;
+  opacity: 0.7;
+}
+
+#SupportUS {
+  opacity: 0.7;
 }
 
 .footer .developer {
@@ -188,13 +193,17 @@ video#bgvid {
 }
 
 .footer .monster {
-  max-width: 80px;
+  max-width: 120px;
   opacity: 0.7;
   display: inline-block;
   vertical-align: middle;
   /*padding-right: 200px;*/
   text-align: center;
   float: none;
+}
+
+.footer .monster:hover {
+  opacity: 1; 
 }
 
 .footer .developer:hover {
@@ -207,41 +216,59 @@ video#bgvid {
   padding-bottom: -20px;
 }
 
-
 .footer .social {
   float: none;
   cursor: default;
   padding: 0 75px;
+  color: white;
+  font-size: 32px;
+  color: #B6B6B6;
 }
 
 .footer .social a {
   display: inline-block;
   vertical-align: middle;
   max-width: 35px;
+  position: relative;
 }
 
 #facebook{
   max-width: 30px;
 }
 
+
+#instagram:hover p{
+  color:white;
+  border-radius: 5px;
+  font-size: 32px;
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
 #facebook:hover {
-  background-color: #3b5998;
+  color: #3b5998;
 }
 
 #twitter:hover  {
-  background-color: #55acee;
+  color: #55acee;
 }
 
-#youtube:hover   {
-  background-color: #e52d27;
+#youtube p:hover   {
+  color: #e52d27;
 }
 
-#pressKit:hover{
-  background-color: #ed4463;
+#pressKit:hover h2{
+  color: #FF67CC;
+  opacity: 1;
 }
 
 #SupportUS:hover{
-  background-color: #AACF88;
+  opacity: 1;
+  color: #AACF88;
+
 }
 
 @media only screen and (max-width: 1366px) {
