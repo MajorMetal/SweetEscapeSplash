@@ -1,16 +1,18 @@
-use Rack::Static,
-  :urls => ["/images", "/js", "/css" ],
-  :root => "public"
+
+use Rack::Static, root: "assets", urls: ["/js", "/css", "/images", "/pdfs", "/videos" , "/fonts" ]
 
 
-run lambda { |env|
-  [
-    200,
-    {
-      'Content-Type'  => 'text/html',
-      'Cache-Control' => 'public, max-age=86400'
-    },
-    File.open('public/index.html', File::RDONLY)
-    
-  ]
+header_options = {
+  "Content-Type" => "text/html",
+  "Cache-Control" => "public, max-age=86400",
 }
+
+map "/" do
+
+  run ->(env) { [200, header_options, File.open("views/index.html", File::RDONLY)] }
+end
+
+map "/support" do
+  run ->(env) { [200, header_options, File.open("views/support.html", File::RDONLY)] }
+end
+
