@@ -157,6 +157,9 @@ video#bgvid {
 
 /*Footer*/
 .footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background: #0e0e0e;
   padding: 20px 0;
   /*line-height: 30px;*/
@@ -182,6 +185,8 @@ video#bgvid {
 
 #SupportUS {
   opacity: 0.7;
+  margin-top: 30px;
+
 }
 
 .footer .developer {
@@ -197,9 +202,6 @@ video#bgvid {
   opacity: 0.7;
   display: inline-block;
   vertical-align: middle;
-  /*padding-right: 200px;*/
-  text-align: center;
-  float: none;
 }
 
 .footer .monster:hover {
@@ -219,9 +221,8 @@ video#bgvid {
 .footer .social {
   float: none;
   cursor: default;
-  padding: 0 75px;
   color: white;
-  font-size: 32px;
+  font-size: 30px;
   color: #B6B6B6;
 }
 
@@ -230,6 +231,7 @@ video#bgvid {
   vertical-align: middle;
   max-width: 35px;
   position: relative;
+  margin-top: 20px;
 }
 
 #facebook{
@@ -240,7 +242,7 @@ video#bgvid {
 #instagram:hover p{
   color:white;
   border-radius: 5px;
-  font-size: 32px;
+  font-size: 30px;
   background: #f09433; 
   background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
   background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
@@ -356,8 +358,14 @@ video#bgvid {
 
 @media only screen and (max-width: 600px) {
   .footer {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     position: relative;
+  }
+
+  .footer .social a {
+    margin: 0;
   }
 
   video#bgvid{
@@ -382,22 +390,16 @@ video#bgvid {
     display: none;
   }
 
-  .monster {
-    max-width: 250px;
-    padding-right: 125px;
-    padding-bottom: 20px;
-    clear: both;
-  }
-
   .developer {
     height: 0;
     width: 0;
     visibility: hidden;
   }
 
-  .footer {
+  .fod {
+    display: flex;
+    justify-content: space-around;
     text-align: center;
-    position: relative;
   }
 
   .footer .social {
