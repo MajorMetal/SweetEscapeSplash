@@ -1,0 +1,307 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/BEBAS___.TTF);
+  }
+  
+  @font-face {
+    font-family: myNextFont;
+    src: url(../fonts/HTOWERT.TTF);
+  }
+
+  @font-face {
+    font-family: privacyFont;
+    src: url(../fonts/HTOWERT.TTF);
+  }
+
+h1 {
+    font-family: myFirstFont;
+    font-size: 50px;
+    text-align: justify;
+    text-transform: uppercase;
+    margin: 0;
+    word-spacing: 10px;
+  }
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    max-width:100%;
+    background-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 2;
+    color: white;
+}
+
+.inner-grid-1 {
+    padding: 20px;
+    align-self: center;
+    z-index: 1;
+} 
+
+.inner-grid-2 {
+    padding: 20px;
+    align-self: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.inner-grid-2 img {
+    width: 100%;
+    max-width: 600px;;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video video {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.button {
+    margin: 10px 0;
+    border: none;
+    text-align: center;
+    font-family: myFirstFont, "Arial Black", Gadget, sans-serif;
+    font-size: 28px;
+    padding: 10px 0 7px 0;
+    width: 440px;
+    color: #222;
+    background: #ff67cc;
+    border-bottom: 15px solid #ed4463;
+    display: inline-block;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.3);
+    -webkit-clip-path: polygon(3px 3px, 100% 0, 99% 100%, 0 100%);
+    clip-path: polygon(3px 3px, 100% 0, 99% 100%, 0 100%);
+    text-decoration: none;
+    top:10;
+    left:10;
+    max-width: 440px;
+  }
+  
+  .button:hover {
+    -webkit-box-shadow: inset 0 0 0 200px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0 0 0 200px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 0 200px rgba(0,0,0,0.1);
+  }
+
+  .buy-button {
+    color: #222;
+    background-color: #F7F428;
+    border-color: #c7c522;
+    text-shadow: 0 -2px 0 rgba(255, 255, 255, 0.3);
+  }
+
+footer {
+    height: 150px;
+    width: 100%;
+    background-color: #0e0e0e;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+footer .social-section a {
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    color: #B6B6B6;
+    text-decoration: none;
+}
+
+#instagram:hover {
+    color:white;
+    border-radius: 5px;
+    font-size: 30px;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    /* background-image: -webkit-linear-gradient(left, #E0F8F7, #585858, #fff);
+    background-image: -moz-linear-gradient(left, #E0F8F7, #585858, #fff); 
+    background-image: -ms-linear-gradient(left, #E0F8F7, #585858, #fff); 
+    background-image: -o-linear-gradient(left, #E0F8F7, #585858, #fff); 
+    background-image: linear-gradient(to right, #E0F8F7, #585858, #fff); */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#facebook:hover {
+    color: #3b5998;
+}
+
+#twitter:hover  {
+    color: #55acee;
+}
+
+#youtube:hover   {
+    color: #e52d27;
+}
+
+footer .footer-logo {
+    width: 150px;
+    opacity: 0.7;
+    transition: transform .5s;
+}
+
+footer .footer-logo:hover {
+    transform: scale(1.2);
+    transition: transform .5s;
+}
+
+footer .privacy-section a {
+    font-family: myFirstFont;
+    color: #B6B6B6;
+    margin: 0 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer .privacy-section a:hover {
+    color: white;
+}
+
+.youtube-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000f5;
+    z-index: 100;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.youtube-modal .modal-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.youtube-modal iframe {
+    padding: 250px 0;
+}
+
+.home-link {
+    padding: 30px 0 0 0;
+    text-align: center;
+}
+.home-link img {
+    cursor: pointer;
+    width: 100px;
+}
+
+.privacy-container {
+    font-family: privacyFont;
+    word-spacing: 10px;
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 1000px;
+    color: rgb(56, 56, 56);
+    font-weight: 600;
+}
+
+.privacy-container h3 {
+    font-size: 1rem;
+    margin: 30px 0;
+}
+
+.privacy-container .has-list {
+    margin-bottom: 10px;
+}
+
+.privacy-item-list {
+    margin-top: 0;
+}
+
+.privacy-item-list li{
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .video {
+        display: none;
+    }
+
+    .inner-container {
+        grid-template-columns: 1fr;
+    }
+
+    .inner-grid-1 h1 {
+        display: none;
+    }
+
+    .inner-grid-1 {
+        text-align: center;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inner-grid-2 {
+        grid-row: 1;
+    }
+}
+
+@media only screen and (max-width: 767px) { 
+    footer {
+        height: auto;
+        padding: 20px 0;
+        grid-template-columns: 1fr;
+    }
+
+    footer .social-section, footer .privacy-section {
+        padding: 20px 0;
+    }
+
+    footer .logo-section {
+        padding: 20px 0;
+        grid-row: 1;
+    }
+    
+    footer .privacy-section {
+        font-size: 12px;
+    }
+
+    .youtube-modal iframe {
+        padding: 150px 0;
+    }
+}
+
+@media only screen and (max-width: 440px) { 
+  .button {
+      width: 100%;
+  }
+}
