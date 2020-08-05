@@ -223,13 +223,13 @@ footer .privacy-section a:hover {
 }
 
 .privacy-container {
-    font-family: privacyFont;
-    word-spacing: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5f5f5f;
+    word-spacing: 0;
     margin: 0 auto;
     padding: 40px;
     max-width: 1000px;
-    color: rgb(44, 44, 44);
-    font-weight: 600;
+    font-weight: normal;
 }
 
 .privacy-page {
@@ -263,6 +263,7 @@ footer .privacy-section a:hover {
 .privacy-container h3 {
     font-size: 1rem;
     margin: 30px 0;
+    font-weight: 100;
 }
 
 .privacy-container .has-list {
